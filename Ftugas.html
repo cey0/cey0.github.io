@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Tugas</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>Form Tugas</h2>
+    <form id="tugasForm">
+      <div class="form-group">
+        <label for="tugas">Tugas</label>
+        <input type="text" class="form-control" id="tugas" placeholder="Masukkan nama tugas" required>
+      </div>
+      <div class="form-group">
+        <label for="TugasDetail">Tugas Detail</label>
+        <textarea class="form-control" id="TugasDetail" rows="3" placeholder="Masukkan detail tugas" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="Nama">Tipe Joki</label>
+        <input type="text" class="form-control" id="Nama" readonly>
+      </div>
+      <div class="form-group">
+        <label for="harga">Harga</label>
+        <input type="text" class="form-control" id="harga" readonly>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./scripts/joki.js"></script>
+
+</body>
+</html>
